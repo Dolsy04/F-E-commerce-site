@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --bg-color: #808080;
+    --button-color: #00ff;
+    --other-color: #ff0000;
+    --header-color: #f5f5f5;
+}
+@media screen and (min-width: 1024px) {
+    header{
+        background-color: var(--header-color);
+        color:var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    header h1{
+        text-transform: uppercase;
+        font-family: "Playwrite CU", system-ui;
+        font-optical-sizing: auto;
+        color: var(--other-color);
+    }
+    .nav{
+        position: fixed;
+        top: 68px;
+        background-color: #f5f5f5;
+        width: 10%;
+    }
+
+    .nav a{
+        font-family: 'poppins';
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 15px;
+        transition: all .3s;
+    }
+    main a:hover{
+        color: var(--other-color);
+    }
+
+    .cart-summary{
+        border: 1px solid #ccc;
+        width: 50%;
+        margin: 20px;
+        font-family: 'poppins';
+        line-height: 1.7;
+        padding: 5px;
+    }
+    .cart-summary h2{
+        text-align: center;
+    }
+    .cart-summary h3{
+        float: right;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .cart-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .product-image {
+        margin-right: 20px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .item-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .checkout-item-delivery-info-container{
+        display: flex;
+        align-items: flex-start;
+    }
+    .delivery-info-payment-button{
+        width: 50%;
+        margin: 20px 50px 0 0;  
+    }
+    .delivery-info{
+        border: 1px solid #ccc;
+        font-family: 'poppins';
+        width: 100%;
+    }
+    .delivery-info h2{
+        text-align: center;
+    }
+    .delivery-info p{
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        margin-top: 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        /* font-weight: 600;     */
+    }
+    .delivery-info p:nth-child(6){
+        height: 100px;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .delivery-info h4{
+        padding-right: 10px;
+    }
+    .delivery-info-payment-button button{
+        margin: 20px 40px;
+        width: 60%;
+        height: 60px;
+        font-size: 20px;
+        font-family: 'poppins';
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+        background-color: var(--bg-color);
+        color: var(--header-color);
+        transition: .5s all;
+    }
+    .delivery-info-payment-button button:hover{
+        transform: scale(1.1);
+        box-shadow: 19px 15px 1px rgba(0,0,0,0.1);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header{
+        background-color: var(--header-color);
+        color:var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    header h1{
+        text-transform: uppercase;
+        font-family: "Playwrite CU", system-ui;
+        font-optical-sizing: auto;
+        color: var(--other-color);
+    }
+    .nav{
+        position: fixed;
+        top: 68px;
+        background-color: #f5f5f5;
+        /* width: 10%; */
+    }
+
+    .nav a{
+        font-family: 'poppins';
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 15px;
+        transition: all .3s;
+    }
+    main a:hover{
+        color: var(--other-color);
+    }
+
+    .cart-summary{
+        border: 1px solid #ccc;
+        width: 50%;
+        margin: 20px;
+        font-family: 'poppins';
+        line-height: 1.7;
+        padding: 5px;
+    }
+    .cart-summary h2{
+        text-align: center;
+    }
+    .cart-summary h3{
+        float: right;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .cart-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .product-image {
+        margin-right: 20px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .item-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .checkout-item-delivery-info-container{
+        display: flex;
+        align-items: flex-start;
+    }
+    .delivery-info-payment-button{
+        width: 50%;
+        margin: 20px 50px 0 0;  
+    }
+    .delivery-info{
+        border: 1px solid #ccc;
+        font-family: 'poppins';
+        width: 100%;
+    }
+    .delivery-info h2{
+        text-align: center;
+    }
+    .delivery-info p{
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        margin-top: 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        /* font-weight: 600;     */
+    }
+    .delivery-info p:nth-child(6){
+        height: 100px;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .delivery-info h4{
+        padding-right: 10px;
+    }
+    .delivery-info-payment-button button{
+        margin: 20px 40px;
+        width: 60%;
+        height: 60px;
+        font-size: 20px;
+        font-family: 'poppins';
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+        background-color: var(--bg-color);
+        color: var(--header-color);
+        transition: .5s all;
+    }
+    .delivery-info-payment-button button:hover{
+        transform: scale(1.1);
+        box-shadow: 19px 15px 1px rgba(0,0,0,0.1);
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    header{
+        background-color: var(--header-color);
+        color:var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    header h1{
+        text-transform: uppercase;
+        font-family: "Playwrite CU", system-ui;
+        font-optical-sizing: auto;
+        color: var(--other-color);
+    }
+    .nav{
+        position: fixed;
+        top: 68px;
+        background-color: #f5f5f5;
+    }
+
+    .nav a{
+        font-family: 'poppins';
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 15px;
+        transition: all .3s;
+    }
+    main a:hover{
+        color: var(--other-color);
+    }
+
+    .cart-summary{
+        border: 1px solid #ccc;
+        width: 100%;
+        margin: 20px 0;
+        font-family: 'poppins';
+        line-height: 1.7;
+        padding: 5px;
+    }
+    .cart-summary h2{
+        text-align: center;
+    }
+    .cart-summary h3{
+        float: right;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .cart-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .product-image {
+        margin-right: 20px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    .item-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .checkout-item-delivery-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .delivery-info-payment-button{
+        width: 100%;
+        margin: 20px 50px 0 0;  
+    }
+    .delivery-info{
+        border: 1px solid #ccc;
+        font-family: 'poppins';
+        width: 100%;
+    }
+    .delivery-info h2{
+        text-align: center;
+    }
+    .delivery-info p{
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        margin-top: 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 2px;
+        /* font-weight: 600;     */
+    }
+    .delivery-info p:nth-child(6){
+        height: 100px;
+        align-items: flex-start;
+        padding: 10px 0px;
+    }
+    .delivery-info h4{
+        padding-right: 10px;
+    }
+    .delivery-info-payment-button button{
+        margin: 20px 40px;
+        width: 70%;
+        height: 60px;
+        font-size: 18px;
+        font-family: 'poppins';
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+        background-color: var(--bg-color);
+        color: var(--header-color);
+        transition: .5s all;
+    }
+    .delivery-info-payment-button button:hover{
+        box-shadow: 19px 15px 1px rgba(0,0,0,0.1);
+    }
+}

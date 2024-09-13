@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="shortcut icon" href="./image/image 2.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dd9eaac1cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.href='index.html'">CART</h1>
+        <button class="CartBtn"><i class='bx bxs-cart-add'></i><span class="cart-count">(0)</span></button>
+    </header>
+
+    <main>
+        <div class="nav">
+            <a href="index.html">/.. Home</a>
+            <a style="color: red;" href="cart.html">/ Cart /</a>        
+        </div>
+        <div class="cart">
+            <h1>YOUR CART</h1>
+            <p class="empty-cart">Your cart is empty</p>
+            <div class="cart-items">
+                <!-- here cart should display -->
+            </div>
+            <hr>
+            <div class="total-payment-button-container">
+                <div class="total-button-container">
+                    <div class="cart-total">
+                        <h3>Total Price: <i class="fa-solid fa-naira-sign"></i> <span class="total-price">0.00</span></h3>
+                    </div>
+                    <button class="checkout">Proceed to checkout</button>
+                </div>
+            
+       
+
+                <section class="delivery-information">
+                    <h2>Delivery Information</h2>
+                    <div>
+                        <input type="text" placeholder="Full Name" required><br>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="tel" placeholder="Phone Number (Optional)">
+                    </div>
+                    <div>
+                        <input class="address" type="text" placeholder="Delivery Address">
+                    </div>
+                    <!-- <button type="submit"></button> -->
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>

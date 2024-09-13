@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script> <!-- Paystack script -->
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="shortcut icon" href="./image/image 2.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dd9eaac1cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    
+    <main>
+        <div class="nav">
+            <a href="index.html">/.. Home</a>
+            <a href="cart.html">/ Cart /</a>        
+        </div>
+        <div class="checkout-item-delivery-info-container">
+            <div class="cart-summary">
+                <h2>Your Order List</h2>
+                <div id="checkout-cart-items"></div>
+                <!-- <h3>Total Price: $<span id="total-price">0.00</span></h3> -->
+            </div>
+            <div class="delivery-info-payment-button">
+                <div class="delivery-info">
+                    <h2>Delivery Information</h2>
+                    <p id="full-name"></p>
+                    <p id="email"></p>
+                    <p id="phone"></p>
+                    <p id="optionalPhone"></p>
+                    <p id="address"></p>
+                </div>
+                <button id="proceed-to-payment">Proceed to Payment</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>
